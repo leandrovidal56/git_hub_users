@@ -1,7 +1,7 @@
 import React from 'react';
 import { useNavigation } from '@react-navigation/native';
 
-import Button from '../../components/Button';
+import Button from '~/components/Button';
 import { Container } from './styles';
 
 const Splash: React.FC = () => {

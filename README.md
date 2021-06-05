@@ -1,9 +1,9 @@
-# Template React Native Typescript
+# Github users and repos
 
-template Typescript  with settings basicis for use development in React Native.
+Application using API from GitHub to find and list users and yours repos.
 
 <h4 align="center">
-	🚧  React Native Typescript 📱 In building...  🚧
+	🚧  GitHub_users 📱 In building...  🚧
 </h4>
 
 # Composição Do Projeto
@@ -24,7 +24,7 @@ template Typescript  with settings basicis for use development in React Native.
 - [x] Styled Components
 - [x] Husky
 - [x] lint-staged
-- [ ] Import src
+- [x] Import src
 - [ ] Jest or Cypress
 
 
@@ -38,10 +38,10 @@ Is good have the code editor [VSCode](https://code.visualstudio.com/)
 
 # use de comands is to system Linux or MacOs
 # Clone this repository
-$ git clone <https://github.com/leandrovidal56/template_react_native.git>
+$ git clone <git@github.com:leandrovidal56/git_hub_users.git>
 
 # Entre the past of project using terminal
-$ cd template_react_native
+$ cd git_hub_users
 
 # Install of dependency
 $ yarn install
