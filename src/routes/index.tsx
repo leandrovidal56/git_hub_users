@@ -7,9 +7,14 @@ import Home from '../pages/Home';
 const Open = createStackNavigator();
 
 const OpenRoutes: React.FC = () => (
-  <Open.Navigator initialRouteName="Home">
+  <Open.Navigator
+    initialRouteName="Homes"
+    screenOptions={{
+      headerShown: false,
+    }}
+  >
     <Open.Screen name="Splash" component={Splash} />
-    <Open.Screen name="Home" component={Home} />
+    <Open.Screen name="Homes" component={Home} />
   </Open.Navigator>
 );
 
