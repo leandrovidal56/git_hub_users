@@ -1,7 +1,7 @@
 import React from 'react';
 import { createStackNavigator } from '@react-navigation/stack';
 
-import Splash from '../pages/Splash';
+import Login from '../pages/Login';
 import Home from '../pages/Home';
 
 const Open = createStackNavigator();
@@ -13,7 +13,7 @@ const OpenRoutes: React.FC = () => (
       headerShown: false,
     }}
   >
-    <Open.Screen name="Splash" component={Splash} />
+    <Open.Screen name="Login" component={Login} />
     <Open.Screen name="Homes" component={Home} />
   </Open.Navigator>
 );

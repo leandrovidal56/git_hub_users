@@ -24,7 +24,7 @@ const Home: React.FC = () => {
         <TextHeader header="Buscar usuários" />
         <TextDescription description="Crie sua conta através do seu usuário do GitHub" />
         <BoxInput placeholder="@username" />
-        <Button onPress={() => navigation.navigate('Splash')}>Cadastrar</Button>
+        <Button onPress={() => navigation.navigate('Login')}>Cadastrar</Button>
       </Center>
       <Footer>
         <TextFooter footer="Termos de política e privacidade" />
