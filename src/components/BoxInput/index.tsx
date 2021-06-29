@@ -1,7 +1,7 @@
 import React from 'react';
 import { TextInputProps, Image } from 'react-native';
 import { Box, InputName } from './styles';
-import UserLogo from '~/assets/account_circle.png';
+import { AccountCircle } from '~/assets/index';
 
 interface Text extends TextInputProps {
   placeholder?: string;
@@ -10,7 +10,7 @@ interface Text extends TextInputProps {
 
 const BoxInput: React.FC<Text> = ({ ...rest }) => (
   <Box>
-    <Image source={UserLogo} />
+    <Image source={AccountCircle} />
     <InputName {...rest} />
   </Box>
 );

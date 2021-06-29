@@ -1,7 +1,7 @@
 import React from 'react';
 import { useNavigation } from '@react-navigation/native';
 import { Image } from 'react-native';
-import GitHub from '~/assets/github.png';
+import { ArrowBack, GitHub } from '~/assets/index';
 
 import {
   Header,
@@ -10,6 +10,7 @@ import {
   TextHeader,
   TextDescription,
   TextFooter,
+  Return,
 } from '~/components/index';
 import { Container, Content, Top, Center, Footer } from './styles';
 
@@ -17,7 +18,11 @@ const Splash: React.FC = () => {
   const navigation = useNavigation();
   return (
     <Container>
-      <Header />
+      <Header>
+        <Return>
+          <Image source={ArrowBack} />
+        </Return>
+      </Header>
       <Content>
         <Top>
           <Image source={GitHub} />
@@ -26,7 +31,9 @@ const Splash: React.FC = () => {
           <TextHeader header="Buscar usuários" />
           <TextDescription description="Crie sua conta através do seu usuário do GitHub" />
           <BoxInput placeholder="@username" />
-          <Button onPress={() => navigation.goBack()}>Cadastrar</Button>
+          <Button onPress={() => navigation.navigate('Users')}>
+            Cadastrar
+          </Button>
         </Center>
         <Footer>
           <TextFooter footer="Termos de política e privacidade" />

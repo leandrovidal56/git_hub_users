@@ -10,7 +10,7 @@ const Container = styled.View`
   justify-content: space-between;
   background: #ffffff;
   align-items: center;
-  margin-top: 20px;
-  padding: ${16 + getStatusBarHeight()}px 30px ${16 + getBottomSpace()}px;
+  padding: ${36 + getStatusBarHeight()}px 16px ${16 + getBottomSpace()}px;
 `;
+
 export default Container;

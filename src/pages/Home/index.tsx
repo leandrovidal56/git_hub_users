@@ -1,7 +1,7 @@
 import React from 'react';
 import { useNavigation } from '@react-navigation/native';
 import { Image } from 'react-native';
-import GitHub from '~/assets/github.png';
+import { GitHub } from '~/assets/index';
 
 import {
   BoxInput,
@@ -24,7 +24,7 @@ const Home: React.FC = () => {
         <TextHeader header="Buscar usuários" />
         <TextDescription description="Crie sua conta através do seu usuário do GitHub" />
         <BoxInput placeholder="@username" />
-        <Button onPress={() => navigation.navigate('Login')}>Cadastrar</Button>
+        <Button onPress={() => navigation.navigate('Users')}>Cadastrar</Button>
       </Center>
       <Footer>
         <TextFooter footer="Termos de política e privacidade" />

@@ -1,14 +1,8 @@
 import React from 'react';
-import { Image } from 'react-native';
 import Container from './styles';
-import Picture from '~/assets/picture_profile.png';
-import Return from '~/assets/arrow_back.png';
 
-const Header: React.FC = () => (
-  <Container>
-    <Image source={Return} />
-    <Image source={Picture} />
-  </Container>
-);
+const Header: React.FC = ({ children }) => {
+  return <Container>{children}</Container>;
+};
 
 export default Header;
