@@ -4,6 +4,8 @@ import Arrowright from '~/assets/arrow_right.png';
 import Company from '~/assets/company.png';
 import Delete from '~/assets/delete.png';
 import Edit from '~/assets/edit.png';
+import FilterList from '~/assets/filter_list.png'
+import Find from '~/assets/find.png';
 import GitHubSmall from '~/assets/github_small.png';
 import GitHub from '~/assets/github.png';
 import Language from '~/assets/language.png';
@@ -23,6 +25,8 @@ export {
   Company,
   Delete,
   Edit,
+  FilterList,
+  Find,
   GitHubSmall,
   GitHub,
   Language,

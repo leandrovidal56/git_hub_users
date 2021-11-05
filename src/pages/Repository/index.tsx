@@ -1,12 +1,20 @@
-import React from 'react';
-import { Image, ScrollView } from 'react-native';
-import { ArrowBack, PictureProfile } from '~/assets/index';
+import React, { useState } from 'react';
+import {
+  Image,
+  ScrollView,
+  StatusBar,
+  ActivityIndicator,
+  Platform,
+  TextInput,
+} from 'react-native';
+import { ArrowBack, PictureProfile, FilterList, Find } from '~/assets/index';
 
 import { Header, Return, CardRepo } from '~/components/index';
 
-import { Container, Content } from './styles';
+import { Container, Content, Search, SearchBar, Filter } from './styles';
 
 const Repository: React.FC = () => {
+  const [value, setValue] = useState('');
   return (
     <Container>
       <Header>
@@ -15,6 +23,15 @@ const Repository: React.FC = () => {
         </Return>
         <Image source={PictureProfile} />
       </Header>
+      <Search>
+        <SearchBar>
+          <Image source={Find} />
+          <TextInput placeholder="busque" />
+        </SearchBar>
+        <Filter>
+          <Image source={FilterList} />
+        </Filter>
+      </Search>
       <ScrollView>
         <Content>
           <CardRepo
